@@ -6,5 +6,5 @@ Slug: pelican-on-gitlab-ce
 Author: Daniel Sniecinski
 
 
-Ceci est le contenu de mon Deuxième Post :
-Version 2 
+Ceci est le contenu de mon Troisième Post :
+Version 3 
