@@ -3,7 +3,7 @@ build website:
   script:
     - cd /home/vagrant/blog-projet4
     - make html
-    - pelican content -o output -s pelicancon.py
+    - pelican content -o output -s pelicanconf.py
 
 #deploy website:
 #  stage: deploy
