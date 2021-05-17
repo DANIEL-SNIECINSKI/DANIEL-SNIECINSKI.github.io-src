@@ -5,11 +5,12 @@ build website:
     - make html
     - pelican content -o output -s pelicanconf.py
 
-#deploy website:
-#  stage: deploy
-#  only:
-#  - master
-#  script:
-#    - make publish
-#    - pelican content -o output -s publishconf.py
+deploy website:
+  stage: deploy
+  only:
+  - master
+  script:
+    - cd /home/vagrant/blog-projet4
+    - make publish
+    - pelican content -o output -s publishconf.py
 
