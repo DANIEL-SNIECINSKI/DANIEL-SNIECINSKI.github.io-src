@@ -1,0 +1,16 @@
+
+
+build website:
+  stage: build
+  script:
+    - make html
+    - pelican content -o output -s pelicancon.py
+
+deploy website:
+  stage: deploy
+  only:
+  - master
+  script:
+    - make publish
+    - pelican content -o output -s publishconf.py
+
