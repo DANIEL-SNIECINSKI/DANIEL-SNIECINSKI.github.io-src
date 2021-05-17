@@ -1,0 +1,24 @@
+build website:
+  stage: build
+  script:
+    - cd /home/vagrant/blog-projet4
+    - make html
+    - pelican content -o output -s pelicanconf.py
+
+deploy website:
+  stage: deploy
+  only:
+  - master
+  script:
+    - cd /home/vagrant/blog-projet4
+    - make publish
+    - pelican content -o output -s publishconf.py
+
+# Copie de index.html généré dans "output" pour Serveur Nginx
+    - cp /home/vagrant/blog-projet4/output/index.html /var/www/blog.projet4/html
+    - cp /home/vagrant/blog-projet4/output/index.html /var/www/daniel-sniecinski.github.io/html
+
+
+
+
+
