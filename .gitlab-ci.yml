@@ -1,7 +1,6 @@
 build website:
   stage: build
   script:
-    - cd blog-projet4
     - make html
     - pelican content -o output -s pelicancon.py
 
@@ -10,7 +9,6 @@ deploy website:
   only:
   - master
   script:
-    - cd blog-projet4
     - make publish
     - pelican content -o output -s publishconf.py
 
