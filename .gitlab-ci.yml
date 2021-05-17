@@ -1,8 +1,8 @@
 
-
 build website:
   stage: build
   script:
+    - cd blog-projet4
     - make html
     - pelican content -o output -s pelicancon.py
 
