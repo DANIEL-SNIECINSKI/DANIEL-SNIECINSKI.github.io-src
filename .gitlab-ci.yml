@@ -1,7 +1,8 @@
 build website:
   stage: build
   script:
-    - make html /home/vagrant/blog-projet4
+    - cd blog-projet4
+    - make html
     - pelican content -o output -s pelicancon.py
 
 deploy website:
@@ -9,6 +10,7 @@ deploy website:
   only:
   - master
   script:
+    - cd blog-projet4
     - make publish
     - pelican content -o output -s publishconf.py
 
