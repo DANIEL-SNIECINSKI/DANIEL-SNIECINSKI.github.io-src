@@ -22,7 +22,6 @@ deploy website:
     - cd /home/vagrant/blog-projet4/output
   #  - git remote rm origin 
   #  - git remote add origin https://github.com/DANIEL-SNIECINSKI/daniel-sniecinski.github.io.git
-    - chmod 777 *.html
     - git add *.html
     - git commit -m "envoi *.html vers Github Pages"
     - git push -f origin master
