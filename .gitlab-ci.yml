@@ -20,6 +20,9 @@ deploy website:
 
 # Envoi de *.html vers Github Pages "daniel-sniecinski.github.io"
     - cd /home/vagrant/blog-projet4/output
+    - git remote rm origin
+# Ajout du mot de passe dans la commande :git remote add     
+    - git remote add origin https://github.com/DANIEL-SNIECINSKI:Soleil2019???/daniel-sniecinski.github.io.git
     - git add *.html
     - git commit -m "envoi *.html vers Github Pages"
     - git push -u origin master
