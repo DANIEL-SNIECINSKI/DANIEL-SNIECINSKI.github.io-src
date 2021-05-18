@@ -6,5 +6,5 @@ Slug: pelican-on-gitlab-ce
 Author: Daniel Sniecinski
 
 
-Ceci est le contenu de mon Quatorzième Post :
-Version 14 
+Ceci est le contenu de mon Quinzième Post :
+Version 15 
