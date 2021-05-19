@@ -28,7 +28,7 @@ deploy website:
 #    - git commit -m "envoi *.html vers Github Pages"
 #    - git push -u origin master
     - git init
-    - git remote add origin https://token@github.com/DANIEL-SNIECINSKI:Soleil2019???/daniel-sniecinski.github.io.git
+    - git remote add origin https://token@github.com/daniel-sniecinski.github.io.git
     - git add .
     - git commit -m "Publish"
     - git push origin master --force
