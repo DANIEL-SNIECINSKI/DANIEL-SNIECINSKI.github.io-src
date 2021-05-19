@@ -19,6 +19,7 @@ deploy website:
     - cp /home/vagrant/blog-projet4/output/index.html /var/www/daniel-sniecinski.github.io/html
 
 # Envoi de *.html vers Github Pages "daniel-sniecinski.github.io"
+#    - chmod 777 -R /home/vagrant/blog-projet4
     - cd /home/vagrant/blog-projet4/.git/refs/remotes/origin
     - rm -rf master
     - cd /home/vagrant/blog-projet4/output
