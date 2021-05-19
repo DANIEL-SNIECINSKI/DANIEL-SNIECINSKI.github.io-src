@@ -19,14 +19,20 @@ deploy website:
     - cp /home/vagrant/blog-projet4/output/index.html /var/www/daniel-sniecinski.github.io/html
 
 # Envoi de *.html vers Github Pages "daniel-sniecinski.github.io"
-    - cd /home/vagrant/blog-projet4/.git/refs/remotes/origin
-    - rm -rf master
+#    - cd /home/vagrant/blog-projet4/.git/refs/remotes/origin
+#    - rm -rf master
     - cd /home/vagrant/blog-projet4/output
-    - git remote rm origin 
-    - git remote add origin https://github.com/DANIEL-SNIECINSKI/daniel-sniecinski.github.io.git
-    - git add *.html
-    - git commit -m "envoi *.html vers Github Pages"
-    - git push -u origin master
+#    - git remote rm origin 
+#    - git remote add origin https://github.com/DANIEL-SNIECINSKI/daniel-sniecinski.github.io.git
+#    - git add *.html
+#    - git commit -m "envoi *.html vers Github Pages"
+#    - git push -u origin master
+    - git init
+    - git remote add origin 
+    - https://token@github.com/smjfsdjfskfjsdf.git
+    - git add .
+    - git commit -m "Publish"
+    - git push origin master --force
 
 
 
