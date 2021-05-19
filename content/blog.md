@@ -1,10 +1,10 @@
 Title: Mon Blog Projet4
-Date: 2021-05-17
+Date: 2021-05-19
 Category: GitLab
 Tags: pelican, gitlab
 Slug: pelican-on-gitlab-ce
 Author: Daniel Sniecinski
 
 
-Ceci est le contenu de mon Quinzième Post :
-Version 15 
+Ceci est le contenu de mon Seizième Post :
+Version 16 
