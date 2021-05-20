@@ -37,7 +37,7 @@ job1:
 #    - git commit -m "envoi *.html vers Github Pages"
 #    - git push -u origin master
     - git init
-    - git remote add origin https://${mentorat}@github.com/DANIEL-SNIECINSKI/daniel-sniecinski.github.io.git
+    - git remote add origin https://${GITHUB_TOKEN}@github.com/DANIEL-SNIECINSKI/daniel-sniecinski.github.io.git
     - git add .
     - git commit -m "Publish"
     - git push origin master --force
