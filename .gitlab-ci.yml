@@ -17,6 +17,11 @@ deploy website:
 # Copie de index.html généré dans "output" pour Serveur Nginx
     - cp /home/vagrant/blog-projet4/output/index.html /var/www/blog.projet4/html
     - cp /home/vagrant/blog-projet4/output/index.html /var/www/daniel-sniecinski.github.io/html
+
+test_variable:
+  stage: test
+  script:
+    - echo "$GITHUB_TOKEN"    
     
 # Envoi de *.html vers Github Pages "daniel-sniecinski.github.io"
 #    - cd /home/vagrant/blog-projet4/.git/refs/remotes/origin
