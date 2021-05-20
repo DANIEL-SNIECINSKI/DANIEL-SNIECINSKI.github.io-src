@@ -18,6 +18,15 @@ deploy website:
     - cp /home/vagrant/blog-projet4/output/index.html /var/www/blog.projet4/html
     - cp /home/vagrant/blog-projet4/output/index.html /var/www/daniel-sniecinski.github.io/html
 
+variables:
+  GITHUB_TOKEN:
+job1:
+  variables:
+    script:
+    - echo "$GITHUB_TOKEN"
+
+
+
 # Envoi de *.html vers Github Pages "daniel-sniecinski.github.io"
 #    - cd /home/vagrant/blog-projet4/.git/refs/remotes/origin
 #    - rm -rf master
