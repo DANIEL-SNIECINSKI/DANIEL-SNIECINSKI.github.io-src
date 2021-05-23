@@ -6,5 +6,5 @@ Slug: pelican-on-gitlab-ce
 Author: Daniel Sniecinski
 
 
-Ceci est le contenu de mon Vingtième Post :
-Version 20 
+Ceci est le contenu de mon Vingtetunième Post :
+Version 21 
