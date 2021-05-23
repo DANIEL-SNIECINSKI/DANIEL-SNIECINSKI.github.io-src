@@ -6,7 +6,7 @@ build website:
     - pelican content -o output -s pelicanconf.py
 
 deploy website:
-  stage: deploy
+  stage: deploy1
   only:
   - master
   script:
