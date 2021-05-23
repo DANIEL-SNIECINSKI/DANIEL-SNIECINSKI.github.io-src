@@ -30,7 +30,7 @@ deploy website:
 
 deploy website:
   stage: deploy
-  only :
+  only:
   - master
   sript:
     - cd /home/vagrant/blog-projet4
