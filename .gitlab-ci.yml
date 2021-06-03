@@ -7,6 +7,7 @@ build website:
 
 deploy website:
   stage: deploy
+  when: manual
   only:
   - master
   script:
